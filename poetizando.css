@@ -1,0 +1,60 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1%;
+    background: #fdf5e6;
+    color: #392620;
+}
+header {
+    background: #b3825c;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 6px double #392620;
+}
+header h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 30px;
+    color: #322518;
+    margin: 0%;
+}
+.logo-nome {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.logo-nome img {
+    height: 60px;
+    width: auto;
+    border-radius:50%
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e4cdaa;
+    padding: -2px;
+    box-shadow: 0 5px #392620;
+}
+.menu-btn {
+    font-size: 2px;
+    cursor: pointer;
+}
+.search-box {
+    flex: 1;
+    margin: 25px;
+}
+.search-box input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #322518;
+    border-radius: 5px  #322518;
+}
+.icones {
+    display: flex;
+    gap: 20px;
+}
+.icones i {
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav
