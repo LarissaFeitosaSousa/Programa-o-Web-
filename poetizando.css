@@ -1,11 +1,12 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    margin: 1%;
-    background: #fdf5e6;
+    margin: 0%;
+    background: #fadba2;
     color: #392620;
 }
 header {
     background: #b3825c;
+    border-radius: 2px;
     padding: 15px;
     text-align: left;
     border-bottom: 6px double #392620;
@@ -21,6 +22,7 @@ header h1 {
     align-items: center;
     justify-content: left;
     gap: 10px;
+    padding: 5px;
 }
 .logo-nome img {
     height: 60px;
@@ -32,12 +34,17 @@ header h1 {
     align-items: center;
     justify-content: space-between;
     background: #e4cdaa;
-    padding: -2px;
-    box-shadow: 0 5px #392620;
+    padding: 0.8px 10px;
+    margin: 2px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px #392620;
 }
 .menu-btn {
     font-size: 2px;
     cursor: pointer;
+    margin-top: 8px;
+    border-radius: 4px;
 }
 .search-box {
     flex: 1;
@@ -45,7 +52,7 @@ header h1 {
 }
 .search-box input{
     width: 100%;
-    padding: 5px;
+    padding: 6px 10px;
     border: 1px solid #322518;
     border-radius: 5px  #322518;
 }
@@ -57,4 +64,94 @@ header h1 {
     font-size: 20px;
     cursor: pointer;
 }
-.nav
+nav ul {
+    list-style: none;
+    padding: 10px 0; 
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav li {
+    font-family: 'Cinzel', serif;
+    cursor: pointer; 
+    color: #392620;
+    border-bottom: 1px solid transparent; 
+    transition: 0.3s;
+}
+nav li:hover {
+    border-bottom: 1px solid #392620;
+}
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #322518;
+    text-align: center;
+}
+.vitrine {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 1px;
+    margin: 20px;
+}
+.produto {
+    border: 1px solid #322518;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    background: #c79168;
+    border-radius: 8px;
+    box-shadow: 3px 6px 8px;
+    transition: transform 0.3;
+}
+.produto img {
+    width: 150px;
+    height: 200px;
+    border: 3px solid #8b5e3c;
+}
+.produto {
+    transform: scale(1.05);
+}
+.produto h3 {
+    font-family: 'Cinzel', serif;
+    margin: 10px 5px;
+}
+.preco {
+    font-weight: bold;
+    font-size: 18px;
+}
+.antigo {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.promocao {
+    color: rgb(177, 19, 19);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+footer {
+    background: #8b5e3c;
+    color: #392620;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+.incline {
+    display: inline;
+}
+.block {
+    display: block;
+    width: 100%;
+}
+.incline-block {
+    display: incline-block;
+    width: 200px;
+    height: auto;
+}
+.none {
+    display: none;
+}
+.hidden {
+    visibility: hidden;
+}
